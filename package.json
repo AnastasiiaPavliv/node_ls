@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf dist && tsc-watch --onSuccess \"npm run watch\"",
+    "watch": "nodemon \"src/app.ts\" --watch \"./src\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaPavliv/node_ls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaPavliv/node_ls/issues"
+  },
+  "homepage": "https://github.com/AnastasiiaPavliv/node_ls#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "mongoose": "^7.0.2"
+  }
+}
